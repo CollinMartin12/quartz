@@ -1,7 +1,7 @@
 ---
 noteId: a6e4e361f55c11f0a3aa2399ea9cae7d
 tags: []
-title: Collin Martin's Blog
+title: Welcome! Student + Life Blog of Collin Martin
 ---
 
 This is a blank Quartz installation.
