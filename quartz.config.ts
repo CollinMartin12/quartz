@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { PublishFilter } from "./quartz/plugins/filters/PublishFilter"
 
 /**
  * Quartz 4 Configuration
@@ -8,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Collin's Notes",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -73,7 +74,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [Plugin.RemoveDrafts(), PublishFilter()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
