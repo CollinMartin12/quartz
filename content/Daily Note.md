@@ -1,0 +1,7 @@
+- [ ] Finish Slides
+- [ ] apartment hunting
+- [ ] Write paper
+- [ ] Read
+- [ ] Haircut
+- [ ] Study 2 hours
+- [ ] Project
