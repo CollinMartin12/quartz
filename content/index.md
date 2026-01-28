@@ -15,7 +15,7 @@ Currently studying Data Science & Engineering in Madrid, Spain I have seen what 
 
 Cheers, Collin Martin
 
-## Add a picture here
+
 
 #publish  
 

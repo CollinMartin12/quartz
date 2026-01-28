@@ -1,2 +1,2 @@
- - Making a letterboxed analysis of all movies n shit
+ - Making a IMDB analysis of all movies n shit
  - Linear regression from Scratch :0
