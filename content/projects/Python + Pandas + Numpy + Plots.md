@@ -1,0 +1,2 @@
+ - Making a letterboxed analysis of all movies n shit
+ - Linear regression from Scratch :0
