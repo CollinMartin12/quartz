@@ -1,2 +1,5 @@
  - Making a IMDB analysis of all movies n shit
- - Linear regression from Scratch :0
+ - Linear regression from Scratch
+ - Logistic Regression
+	 - Soft Max
+	 - Gradient Descent visualization
