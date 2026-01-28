@@ -57,4 +57,4 @@ Calculating the "perfect" direction using every single piece of data in a massiv
 
 
 Here you can see the different algorithms taht are used in gradient descent calculation: [Link](https://www.ruder.io/optimizing-gradient-descent/)
-#publish 
+#publish #ml #data-science #gradient-descent #logistic-regression
