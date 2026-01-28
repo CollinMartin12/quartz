@@ -57,4 +57,9 @@ Calculating the "perfect" direction using every single piece of data in a massiv
 
 
 Here you can see the different algorithms taht are used in gradient descent calculation: [Link](https://www.ruder.io/optimizing-gradient-descent/)
+
+- [ ]  Difference between Sigmoid and soft-max. 
+	- [ ] in multiple Classes and why they sum up to one and what sums up to one
+	- [ ] Calculate & Minimize Loss function
+- [ ] Why not call the BCE the negative log likelihood
 #publish #ml #data-science #gradient-descent #logistic-regression
