@@ -1,4 +1,4 @@
- - Making a IMDB analysis of all movies n shit
+ - Making a IMDB analysis of all movies
  - Linear regression from Scratch
  - Logistic Regression
 	 - Soft Max
