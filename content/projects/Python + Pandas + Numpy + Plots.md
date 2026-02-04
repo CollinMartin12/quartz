@@ -1,4 +1,4 @@
- - Making a IMDB analysis of all movies
+- NCAA Basketball
  - Linear regression from Scratch
  - Logistic Regression
 	 - Soft Max
