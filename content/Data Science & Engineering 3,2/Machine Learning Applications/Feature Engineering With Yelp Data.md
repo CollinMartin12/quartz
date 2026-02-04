@@ -1,3 +1,6 @@
+Machine Learning Applications - *3rd year 2nd term*
+Collin Martin
+
 ### **2. Data Preprocessing & Initial Filtering**
 
 To focus the analysis, we filter the raw dataset for relevance:
