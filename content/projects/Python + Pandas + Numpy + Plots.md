@@ -1,5 +1,3 @@
 - NCAA Basketball
  - Linear regression from Scratch
- - Logistic Regression
-	 - Soft Max
-	 - Gradient Descent visualization
+ - Neural Network From scratch
