@@ -26,12 +26,13 @@ Example of Activation Function sigma:
 Given an element x, the function is defined as the maximum of that element and 0:
 ![[Pasted image 20260210102224.png]]
 Informally, the ReLU function retains only positive elements and discards all negative elements by setting the corresponding activations to 0.
+**ReLu Problem such that gradients become 0 -> stopping training**
 
 #### Sigmoid Function
 The _sigmoid function_ transforms those inputs whose values lie in the domain , to outputs that lie on the interval (0, 1). For that reason, the sigmoid is often called a _squashing function_: it squashes any input in the range (-inf, inf) to some value in the range (0, 1):
 ![[Pasted image 20260210102455.png]]
 ![[Pasted image 20260210102544.png]]
-
+**Squeezing Problem**
 #### Tanh Function
 Like the sigmoid function, the tanh (hyperbolic tangent) function also squashes its inputs, transforming them into elements on the interval between  -1 and 1:
 ![[Pasted image 20260210102623.png]]
