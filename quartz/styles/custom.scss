@@ -9,6 +9,7 @@
   
   // Top Hero
   .intro-hero {
+    min-height: 100vh;
     padding-top: 96px;
     padding-bottom: 3.5rem;
     display: flex;
@@ -70,8 +71,8 @@
         color: var(--light);
         
         &:hover {
-          background: #303030;
-          border-color: #303030;
+          background: var(--darkgray);
+          border-color: var(--darkgray);
         }
       }
       
@@ -80,7 +81,7 @@
         color: var(--dark);
         
         &:hover {
-          background: #f3f3f3;
+          background: var(--lightgray);
         }
       }
       
@@ -141,14 +142,14 @@
       }
       
       .nav-link {
-        color: #4e4e4e;
+        color: var(--dark);
         text-decoration: none;
         font-weight: 400;
         font-size: 0.95rem;
         transition: color 0.3s ease;
         
         &:hover {
-          color: #2b2b2b;
+          color: var(--secondary);
         }
       }
     }
@@ -156,13 +157,14 @@
   
   // Hero Section
   .hero-section {
+    min-height: 100vh;
     padding-top: 0;
     padding-bottom: 3.5rem;
     display: flex;
     align-items: center;
     
     .hero-container {
-      max-width: 1320px;
+      max-width: 1440px;
       margin: 0 auto;
       padding: 0 3rem;
       width: 100%;
@@ -190,14 +192,14 @@
       padding: 1rem 0;
       
       .hero-title {
-        font-size: 3rem;
+        font-size: 2.4rem;
         font-weight: 700;
         color: var(--dark);
         margin-bottom: 1rem;
         line-height: 1.1;
         
         @media (max-width: 768px) {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
       }
       
@@ -237,7 +239,7 @@
         height: 420px;
         border-radius: 20px;
         overflow: hidden;
-        background: #e5e5e5;
+        background: var(--lightgray);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -256,7 +258,7 @@
         .profile-placeholder {
           font-size: 4rem;
           font-weight: 700;
-          color: #4e4e4e;
+          color: var(--darkgray);
           
           @media (max-width: 768px) {
             font-size: 3rem;
@@ -268,8 +270,9 @@
   
   // University Section
   .university-section {
+    min-height: 100vh;
     padding: 4rem 0;
-    background: white;
+    background: var(--light);
     
     .university-container {
       max-width: 1200px;
@@ -294,7 +297,7 @@
       align-items: center;
       
       img {
-        width: 150px;
+        width: 200px;
         height: auto;
         
         @media (max-width: 768px) {
@@ -324,20 +327,20 @@
     
     .university-content {
       .university-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 700;
-        color: #2b2b2b;
+        color: var(--dark);
         margin-bottom: 1rem;
         line-height: 1.1;
         
         @media (max-width: 768px) {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
         }
       }
       
       .university-subtitle {
         font-size: 0.9rem;
-        color: #4e4e4e;
+        color: var(--darkgray);
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
@@ -345,8 +348,8 @@
       }
       
       .university-button {
-        background: #2b2b2b;
-        color: white;
+        background: var(--dark);
+        color: var(--light);
         border: none;
         padding: 0.8rem 2rem;
         font-size: 0.9rem;
@@ -356,7 +359,7 @@
         transition: background 0.3s ease;
         
         &:hover {
-          background: #4e4e4e;
+          background: var(--darkgray);
         }
       }
     }
@@ -364,8 +367,9 @@
   
   // Projects Section
   .projects-section {
+    min-height: 100vh;
     padding: 4rem 0;
-    background: #faf8f8;
+    background: var(--light);
     
     .projects-container {
       max-width: 1200px;
@@ -409,17 +413,17 @@
         left: 0;
         right: 0;
         padding: 2rem;
-        background: white;
+        background: var(--light);
         
         h3 {
           font-size: 1.5rem;
           font-weight: 700;
-          color: #2b2b2b;
+          color: var(--dark);
           margin-bottom: 1rem;
         }
         
         p {
-          color: #4e4e4e;
+          color: var(--darkgray);
           font-size: 0.95rem;
           line-height: 1.5;
         }

@@ -21,7 +21,7 @@ const PortfolioLanding: QuartzComponent = (_props: QuartzComponentProps) => {
             <a href="/projects" class="nav-link">
               Projects
             </a>
-            <a href="/Welcome" class="nav-link">
+            <a href="/blog" class="nav-link">
               Blog
             </a>
           </div>

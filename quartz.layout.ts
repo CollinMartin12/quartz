@@ -27,6 +27,34 @@ export const portfolioLandingLayout: PageLayout = {
   right: [],
 }
 
+// Layout for blog index page
+export const blogIndexLayout: PageLayout = {
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.BlogIndex(),
+  ],
+  left: [
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
+      ],
+    }),
+    Component.Explorer(),
+  ],
+  right: [
+    Component.Graph(),
+    Component.DesktopOnly(Component.TableOfContents()),
+    Component.Backlinks(),
+  ],
+}
+
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
