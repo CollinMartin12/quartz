@@ -1,114 +1,126 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import heroImage from "../../IMG_1606.JPG"
+import projectsImage from "../../images.png"
 
 const PortfolioLanding: QuartzComponent = (_props: QuartzComponentProps) => {
   return (
     <div class="portfolio-landing">
-      <div class="hero-section">
-        <div class="hero-content">
-          <div class="hero-text">
-            <h1 class="hero-title">
-              Collin Martin | <span class="highlight">Data Engineer</span>
-            </h1>
-            <p class="hero-subtitle">
-              Experienced in designing and building scalable data pipelines, cloud 
-              infrastructure (AWS, Azure), and big data solutions with Spark and Kafka. 
-              Transforming complex data into actionable insights.
-            </p>
-          </div>
-          <div class="hero-image">
-            <div class="profile-container">
-              <div class="profile-placeholder"></div>
-            </div>
-          </div>
-        </div>
-        <div class="hero-background"></div>
-      </div>
-      
+      {/* Navigation */}
       <nav class="portfolio-nav">
         <div class="nav-container">
-          <div class="nav-brand">
-            <span>Collin Martin's Personal Website</span>
+          <div class="nav-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 2L15.09 8.26L22 9L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9L8.91 8.26L12 2Z"
+                fill="currentColor"
+              />
+            </svg>
           </div>
           <div class="nav-links">
-            <a href="/" class="nav-link active">Home</a>
-            <a href="/projects" class="nav-link">Projects</a>
-            <a href="/Welcome" class="nav-link">Blog</a>
+            <a href="/" class="nav-link">
+              Home
+            </a>
+            <a href="/projects" class="nav-link">
+              Projects
+            </a>
+            <a href="/Welcome" class="nav-link">
+              Blog
+            </a>
           </div>
         </div>
       </nav>
 
-      <section class="about-section">
-        <div class="container">
-          <h2>About Me</h2>
-          <div class="about-content">
-            <p>
-              Currently studying Data Science & Engineering in Madrid, Spain, I have seen what the tech 
-              scene has to offer and what it takes to enter it. Pursuing data for the past 3 years has 
-              built me a foundation in the world of tech.
-            </p>
-            <p>
-              I am passionate about building scalable data solutions and transforming complex datasets 
-              into actionable insights. My experience spans across data engineering, machine learning, 
-              and cloud infrastructure.
-            </p>
+      {/* Top Hero Section */}
+      <section class="intro-hero">
+        <div class="intro-container">
+          <h1 class="intro-title">Welcome to Collin Martin&apos;s Personal Website</h1>
+          <p class="intro-subtitle">An aspiring Data Scientist</p>
+          <div class="intro-actions">
+            <a href="mailto:hello@cmmdoes.com" class="intro-button primary">
+              Contact
+            </a>
+            <a href="/projects" class="intro-button secondary">
+              Projects
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="skills-section">
-        <div class="container">
-          <h2>Technical Skills</h2>
-          <div class="skills-grid">
-            <div class="skill-category">
-              <h3>Data Engineering</h3>
-              <ul>
-                <li>Apache Spark</li>
-                <li>Apache Kafka</li>
-                <li>ETL/ELT Pipelines</li>
-                <li>Data Warehousing</li>
-              </ul>
+      {/* About + Photo Section */}
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h2 class="hero-title">Collin Martin</h2>
+              <p class="hero-subtitle">ABOUT ME</p>
+              <button class="contact-button">CONTACT</button>
             </div>
-            <div class="skill-category">
-              <h3>Cloud Platforms</h3>
-              <ul>
-                <li>AWS (EC2, S3, Lambda, EMR)</li>
-                <li>Microsoft Azure</li>
-                <li>Docker & Kubernetes</li>
-                <li>Infrastructure as Code</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Programming</h3>
-              <ul>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Scala</li>
-                <li>JavaScript/TypeScript</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Machine Learning</h3>
-              <ul>
-                <li>MLOps</li>
-                <li>Model Deployment</li>
-                <li>Data Science</li>
-                <li>Analytics</li>
-              </ul>
+            <div class="hero-image">
+              <div class="profile-photo">
+                <img src={heroImage} alt="Collin Martin in Madrid" loading="lazy" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cta-section">
-        <div class="container">
-          <h2>Let's Connect</h2>
-          <p>
-            Interested in data engineering, machine learning, or just want to chat about tech? 
-            Feel free to reach out or explore my projects and blog posts.
-          </p>
-          <div class="cta-buttons">
-            <a href="/projects" class="cta-button primary">View Projects</a>
-            <a href="/Welcome" class="cta-button secondary">Read Blog</a>
+      {/* University Section */}
+      <section class="university-section">
+        <div class="university-container">
+          <div class="university-logo">
+            <img src="/static/uc3m-logo.png" alt="Universidad Carlos III de Madrid logo" loading="lazy" />
+          </div>
+          <div class="university-content">
+            <h2 class="university-title">Madrid UC3M 2027</h2>
+            <p class="university-subtitle">ABOUT MY UNIVERSITY</p>
+            <button class="university-button">Another button</button>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section class="projects-section">
+        <div class="projects-container">
+          <div class="project-card project-1">
+            <div
+              class="project-texture"
+              style={{
+                backgroundImage: `url(${projectsImage})`,
+                backgroundPosition: "0% 0",
+              }}
+            ></div>
+            <div class="project-content">
+              <h3>Project 1</h3>
+              <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
+            </div>
+          </div>
+
+          <div class="project-card project-2">
+            <div
+              class="project-texture"
+              style={{
+                backgroundImage: `url(${projectsImage})`,
+                backgroundPosition: "50% 0",
+              }}
+            ></div>
+            <div class="project-content">
+              <h3>Project 2</h3>
+              <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
+            </div>
+          </div>
+
+          <div class="project-card project-3">
+            <div
+              class="project-texture"
+              style={{
+                backgroundImage: `url(${projectsImage})`,
+                backgroundPosition: "100% 0",
+              }}
+            ></div>
+            <div class="project-content">
+              <h3>Project 3</h3>
+              <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
+            </div>
           </div>
         </div>
       </section>
