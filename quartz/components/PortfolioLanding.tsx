@@ -1,6 +1,4 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import heroImage from "../../IMG_1606.JPG"
-import projectsImage from "../../images.png"
 
 const PortfolioLanding: QuartzComponent = (_props: QuartzComponentProps) => {
   return (
@@ -57,7 +55,7 @@ const PortfolioLanding: QuartzComponent = (_props: QuartzComponentProps) => {
             </div>
             <div class="hero-image">
               <div class="profile-photo">
-                <img src={heroImage} alt="Collin Martin in Madrid" loading="lazy" />
+                <img src="/static/profile-photo.jpg" alt="Collin Martin in Madrid" loading="lazy" />
               </div>
             </div>
           </div>
@@ -82,13 +80,7 @@ const PortfolioLanding: QuartzComponent = (_props: QuartzComponentProps) => {
       <section class="projects-section">
         <div class="projects-container">
           <div class="project-card project-1">
-            <div
-              class="project-texture"
-              style={{
-                backgroundImage: `url(${projectsImage})`,
-                backgroundPosition: "0% 0",
-              }}
-            ></div>
+            <div class="project-texture"></div>
             <div class="project-content">
               <h3>Project 1</h3>
               <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
@@ -96,13 +88,7 @@ const PortfolioLanding: QuartzComponent = (_props: QuartzComponentProps) => {
           </div>
 
           <div class="project-card project-2">
-            <div
-              class="project-texture"
-              style={{
-                backgroundImage: `url(${projectsImage})`,
-                backgroundPosition: "50% 0",
-              }}
-            ></div>
+            <div class="project-texture"></div>
             <div class="project-content">
               <h3>Project 2</h3>
               <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
@@ -110,13 +96,7 @@ const PortfolioLanding: QuartzComponent = (_props: QuartzComponentProps) => {
           </div>
 
           <div class="project-card project-3">
-            <div
-              class="project-texture"
-              style={{
-                backgroundImage: `url(${projectsImage})`,
-                backgroundPosition: "100% 0",
-              }}
-            ></div>
+            <div class="project-texture"></div>
             <div class="project-content">
               <h3>Project 3</h3>
               <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
