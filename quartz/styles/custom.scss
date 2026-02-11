@@ -4,7 +4,8 @@
 .portfolio-landing {
   width: 100%;
   min-height: 100vh;
-  background: #faf8f8;
+  // Match overall site theme (light / dark)
+  background: var(--light);
   
   // Top Hero
   .intro-hero {
@@ -28,14 +29,14 @@
     .intro-title {
       font-size: clamp(2.2rem, 4vw, 3.2rem);
       font-weight: 700;
-      color: #111111;
+      color: var(--dark);
       line-height: 1.1;
       margin-bottom: 0.9rem;
     }
     
     .intro-subtitle {
       font-size: 0.95rem;
-      color: #6b6b6b;
+      color: var(--darkgray);
       margin-bottom: 1.8rem;
     }
     
@@ -54,18 +55,19 @@
       align-items: center;
       justify-content: center;
       padding: 0.75rem 1.7rem;
-      border-radius: 999px;
+      border-radius: 10px;
       font-size: 0.9rem;
       font-weight: 500;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       text-decoration: none;
       transition: all 0.2s ease;
-      border: 1px solid #111111;
-      
+      border: 1px solid var(--dark);
+      box-shadow: 0 10px 18px rgba(15, 23, 42, 0.12);
+
       &.primary {
-        background: #111111;
-        color: #ffffff;
+        background: var(--dark);
+        color: var(--light);
         
         &:hover {
           background: #303030;
@@ -74,8 +76,8 @@
       }
       
       &.secondary {
-        background: #ffffff;
-        color: #111111;
+        background: var(--light);
+        color: var(--dark);
         
         &:hover {
           background: #f3f3f3;
@@ -95,8 +97,9 @@
     left: 0;
     right: 0;
     z-index: 100;
-    background: white;
-    border-bottom: 1px solid #e5e5e5;
+    background: var(--light);
+    border-bottom: 1px solid var(--lightgray);
+    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
     padding: 1rem 0;
     
     .nav-container {
@@ -113,11 +116,19 @@
     }
     
     .nav-logo {
-      color: #2b2b2b;
-      
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: var(--dark);
+      color: var(--light);
+      box-shadow: 0 8px 16px rgba(15, 23, 42, 0.18);
+
       svg {
-        width: 24px;
-        height: 24px;
+        width: 18px;
+        height: 18px;
       }
     }
     
@@ -151,9 +162,9 @@
     align-items: center;
     
     .hero-container {
-      max-width: 1200px;
+      max-width: 1320px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 3rem;
       width: 100%;
       
       @media (max-width: 768px) {
@@ -175,15 +186,13 @@
     }
     
     .hero-text {
-      background: #ffffff;
-      border-radius: 24px;
-      padding: 2rem 2.25rem;
-      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
+      // Match simple text-on-background design
+      padding: 1rem 0;
       
       .hero-title {
         font-size: 3rem;
         font-weight: 700;
-        color: #2b2b2b;
+        color: var(--dark);
         margin-bottom: 1rem;
         line-height: 1.1;
         
@@ -194,7 +203,7 @@
       
       .hero-subtitle {
         font-size: 0.9rem;
-        color: #4e4e4e;
+        color: var(--darkgray);
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
@@ -202,8 +211,8 @@
       }
       
       .contact-button {
-        background: #2b2b2b;
-        color: white;
+        background: var(--dark);
+        color: var(--light);
         border: none;
         padding: 0.7rem 1.7rem;
         font-size: 0.9rem;
@@ -214,7 +223,7 @@
         transition: background 0.3s ease;
         
         &:hover {
-          background: #4e4e4e;
+          background: var(--darkgray);
         }
       }
     }
@@ -224,8 +233,8 @@
       justify-content: center;
       
       .profile-photo {
-        width: 350px;
-        height: 350px;
+        width: 420px;
+        height: 420px;
         border-radius: 20px;
         overflow: hidden;
         background: #e5e5e5;
