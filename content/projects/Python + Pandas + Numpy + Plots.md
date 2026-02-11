@@ -1,3 +1,0 @@
-- NCAA Basketball
- - Linear regression from Scratch
- - Neural Network From scratch
