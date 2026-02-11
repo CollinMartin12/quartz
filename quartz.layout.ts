@@ -6,12 +6,25 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [],
-  footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
-    },
+  footer: Component.ConditionalRender({
+    component: Component.Footer({
+      links: {
+        GitHub: "https://github.com/collinmartin",
+        LinkedIn: "https://linkedin.com/in/collinmartin",
+        Email: "mailto:hello@cmmdoes.com",
+      },
+    }),
+    condition: (page) => page.fileData.slug !== "index",
   }),
+}
+
+// Special layout for portfolio landing page (index)
+export const portfolioLandingLayout: PageLayout = {
+  beforeBody: [
+    Component.PortfolioLanding(),
+  ],
+  left: [],
+  right: [],
 }
 
 // components for pages that display a single page (e.g. a single note)
